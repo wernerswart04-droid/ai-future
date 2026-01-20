@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI_FUTURE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>Welcome to AI_FUTURE</h1>
+  <p>Type your vision below:</p>
+  <input type="text" id="userVision" placeholder="Enter your idea here">
+  <button onclick="showNextStep()">Submit</button>
+  <p id="aiResponse"></p>
+
+  <script>
+    function showNextStep() {
+      var vision = document.getElementById('userVision').value;
+      var response = "AI_FUTURE sees your vision: '" + vision + "'. One clear next step: Start small and plan carefully.";
+      document.getElementById('aiResponse').innerText = response;
+    }
+  </script>
+</body>
+</html>
